@@ -1,0 +1,41 @@
+body{
+    background-color: #333 ;
+    color: white;
+    margin: 0;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: auto;
+  background-color: #121212;
+}
+.navbar h2{
+  font-family: cursive;
+  font-size: xx-large;
+  color: white;
+}
+.navbar h2 span{
+  color: #e50914;
+  font-family: cursive;
+  font-size: 2rem;
+}
+.navbar ul{
+  list-style-type: none;
+  display: flex;
+  gap: 4em;
+  justify-content: space-evenly;
+}
+.navbar ul li a{
+  display: inline-block;
+  text-decoration: none;
+  font: 1em sans-serif;
+  color: white;
+  font-size: larger;
+  transition: transform 0.3s ease ;
+}
+.navbar ul li a:hover{
+  text-decoration: underline;
+  color: #e50914;
+  transform: scale(1.05);
+}
