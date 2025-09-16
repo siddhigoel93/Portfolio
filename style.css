@@ -138,7 +138,7 @@ body{
   background-color: #b20710;
 }
 
-#skills{
+#skills, #education{
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -176,4 +176,27 @@ body{
 #skills .skill i{
     font-size: 2.5em;
     color: #e50914;
+}
+#education .educationbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#education .item{
+    display: flex;
+    gap: 4em;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+#education .item h3 , #education .item h4{
+  width: 20rem;
+  font-size: larger;
+}
+hr{
+  border: 0.5px solid gray;
+  width: 80%;
+  /* margin: 1em 0; */
 }
