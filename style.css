@@ -27,7 +27,6 @@ body{
   list-style-type: none;
   display: flex;
   gap: 4em;
-  /* justify-content: space-evenly; */
 }
 .navbar ul li a{
   display: inline-block;
@@ -73,5 +72,68 @@ body{
   transition: background-color 0.3s ease ;
 }
 #home .content .btn:hover{
+  background-color: #b20710;
+}
+#about{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url('https://images.unsplash.com/1/work-stations-plus-espresso.jpg?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bGFwdG9wJTIwb24lMjB0YWJsZXxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
+  height: 100vh;
+  padding: 0 2em;
+}
+
+#about h2, #skills h2, #education h2, #projects h2, #contact h2{
+  font-size: 2em;
+  margin-bottom: 1em;
+  font-family: cursive;
+  border-bottom: 2px solid #e50914;
+  display: inline-block;
+  padding-bottom: 0.5em;
+}
+#about .aboutbody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4em;
+  flex-wrap: wrap;
+} 
+#about #aboutimg{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #e50914;
+}
+#about .box{
+  display: flex;
+  align-items: center;
+  gap: 4em;
+  flex-wrap: wrap;
+}
+#about .bio{
+    flex: 1;
+    font-size: 1.2em;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+#about .text{
+  flex: 1;
+}
+#about .btn{
+  display: inline-block;
+  padding: 0.7em 1em;
+  background-color: #e50914;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease ;
+}
+#about .btn:hover{
   background-color: #b20710;
 }
