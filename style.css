@@ -1,6 +1,7 @@
 body{
     color: white;
     margin: 0;
+    font-family: cursive;
 }
 .navbar{
   display: flex;
@@ -48,11 +49,15 @@ body{
   padding: 0 2em;
 }
 #home{
-    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1542317854-f9596ae570f7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wJTIwb24lMjB0YWJsZXxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
+    background: rgba(0,0,0,0.9) url('https://images.unsplash.com/photo-1542317854-f9596ae570f7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bGFwdG9wJTIwb24lMjB0YWJsZXxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
+    background-blend-mode: darken;
+    height: 100vh;
 }
 #about{
     flex-direction: column;
-    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url('https://images.unsplash.com/1/work-stations-plus-espresso.jpg?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bGFwdG9wJTIwb24lMjB0YWJsZXxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
+    background: rgba(0,0,0,0.9) url('https://images.unsplash.com/1/work-stations-plus-espresso.jpg?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bGFwdG9wJTIwb24lMjB0YWJsZXxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
+    background-blend-mode: darken;
+    height: 100vh;
 }
 #skills, #education{
     flex-direction: column;
@@ -60,7 +65,9 @@ body{
 }
 #contact{
     flex-direction: column;
-    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kZXJ8ZW58MHx8MHx8') no-repeat center center/cover;
+    background: rgba(0,0,0,0.9) url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kZXJ8ZW58MHx8MHx8') no-repeat center center/cover;
+    background-blend-mode: darken;
+    height: 100vh;
 }
 #home .content{
   max-width: 600px;
@@ -75,7 +82,7 @@ body{
   margin: 0.5em 0 1.5em 0;
 }
 #home .content .btn{
-  display: inline-block;
+  /* display: inline-block; */
   padding: 0.75em 1.5em;
   background-color: #e50914;
   color: white;
@@ -105,21 +112,25 @@ body{
   gap: 4em;
   flex-wrap: wrap;
 } 
-#about #aboutimg{
+/* #about #aboutimg{
     width: 250px;
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #e50914;
-}
-#about .box{
+} */
+/* #about .bio{
   display: flex;
   align-items: center;
   gap: 4em;
   flex-wrap: wrap;
-}
+} */
 #about .bio{
     flex: 1;
+    border-radius: 10px;
+    width: 80%;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.1);
     font-size: 1.2em;
     line-height: 1.6;
     display: flex;
@@ -196,9 +207,15 @@ hr{
   width: 80%;
 }
 
-
-.contactbody .message {
-  max-width: 600px;
+#contact{
+  border-radius: 20px;
+  padding: 2em;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  background-color: #1c1c1c;
+  width: ;
+}
+.message {
+  width: 40%;
   margin: 0 auto;
   background: #111; 
   padding: 30px;
@@ -211,7 +228,7 @@ form {
 }
 
 form label {
-  display: block;
+  /* display: block; */
   margin-bottom: 8px;
   color: white;
   font-weight: bold;
