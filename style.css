@@ -1,5 +1,4 @@
 body{
-    /* background-color: #0b0909 ; */
     color: white;
     margin: 0;
 }
@@ -197,18 +196,8 @@ hr{
   width: 80%;
 }
 
-.contactbody{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8rem;
-    flex-wrap: wrap;
-}
-.contactbody .item{
-  display: flex;
-  gap: 1.5em;
-}
-.contactbody .message , .contactbody .contactbox{
+
+.contactbody .message {
   max-width: 600px;
   margin: 0 auto;
   background: #111; 
