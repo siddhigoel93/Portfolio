@@ -194,13 +194,13 @@ hr{
 
 #contact{
   padding: 2em;
-  width:100%;
+  max-width: 100vw;
 }
 .message {
-  width: 40%;
+  width: 40vh;
   margin: 0 auto;
   background: #111; 
-  padding: 30px;
+  /* padding: 30px; */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
 }
@@ -217,7 +217,7 @@ form label {
 
 form input,
 form textarea {
-  width: 100%;
+  width: 80vw;
   padding: 10px;
   background: #000;
   border: 1px solid white; 
@@ -242,9 +242,61 @@ form textarea:focus {
   border-radius: 4px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s ease;
+  /* transition: background 0.3s ease; */
 }
 
 .bttn:hover {
   background: #cc0000; 
+}
+
+@media(max-width: 768px){
+  .navbar{
+    display: none;
+  }
+  #home , #about,#contact{
+    background-color: #000;
+  }
+  #home , #about, #skills, #education, #contact{
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 4em 2em;
+    gap: 2em;
+  }
+  #home .content h1{
+    font-size: 2.5em;
+  }
+  #home .content p{
+    font-size: 1.2em;
+  }
+  #about .aboutbody{
+    flex-direction: column;
+    gap: 2em;
+  }
+  #about .bio{
+    width: 90%;
+    padding: 1em;
+    font-size: 1em;
+  }
+  #skills .skillsbox{
+    flex-direction: column;
+    gap: 2em;
+  }
+  #education .educationbox{
+    gap: 2em;
+  }
+  #education .item{
+    flex-direction: column;
+    gap: 1em;
+  }
+  #education .item h3 , #education .item h4{
+    width: auto;
+    font-size: medium;
+  }
+  #contact{
+
+  }
+  /* .message {
+    width: 80%;
+  } */
 }
